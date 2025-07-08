@@ -1,0 +1,1422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionScreen applies correct styling to selected option 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f5fbff",
+      "flex": 1,
+      "justifyContent": "center",
+      "opacity": 0,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "alignSelf": "flex-start",
+        "color": "#555",
+        "fontSize": 16,
+        "marginBottom": 12,
+      }
+    }
+  >
+    Question 
+    1
+     of 
+    5
+  </Text>
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 16,
+        "elevation": 6,
+        "padding": 24,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.1,
+        "shadowRadius": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#333",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 20,
+        }
+      }
+    >
+      How would you describe your investment knowledge?
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#e6f0ff",
+          "borderColor": "#007BFF",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-0"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            {
+              "backgroundColor": "#007BFF",
+              "borderColor": "#007BFF",
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Novice
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-1"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Intermediate
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-2"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Advanced
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`QuestionScreen navigates to the Result screen if it is the last question 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f5fbff",
+      "flex": 1,
+      "justifyContent": "center",
+      "opacity": 0,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "alignSelf": "flex-start",
+        "color": "#555",
+        "fontSize": 16,
+        "marginBottom": 12,
+      }
+    }
+  >
+    Question 
+    5
+     of 
+    5
+  </Text>
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 16,
+        "elevation": 6,
+        "padding": 24,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.1,
+        "shadowRadius": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#333",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 20,
+        }
+      }
+    >
+      How would you react to a sudden drop in investments?
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-0"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Panic and sell immediately
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-1"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Monitor closely and consider selling
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-2"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Hold and wait for recovery
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-3"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        See it as buying opportunity
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`QuestionScreen navigates to the next question if not the last question 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f5fbff",
+      "flex": 1,
+      "justifyContent": "center",
+      "opacity": 0,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "alignSelf": "flex-start",
+        "color": "#555",
+        "fontSize": 16,
+        "marginBottom": 12,
+      }
+    }
+  >
+    Question 
+    1
+     of 
+    5
+  </Text>
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 16,
+        "elevation": 6,
+        "padding": 24,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.1,
+        "shadowRadius": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#333",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 20,
+        }
+      }
+    >
+      How would you describe your investment knowledge?
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-0"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Novice
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-1"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Intermediate
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-2"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Advanced
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`QuestionScreen renders question and options correctly and handles option selection 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f5fbff",
+      "flex": 1,
+      "justifyContent": "center",
+      "opacity": 0,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "alignSelf": "flex-start",
+        "color": "#555",
+        "fontSize": 16,
+        "marginBottom": 12,
+      }
+    }
+  >
+    Question 
+    1
+     of 
+    5
+  </Text>
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 16,
+        "elevation": 6,
+        "padding": 24,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.1,
+        "shadowRadius": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#333",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 20,
+        }
+      }
+    >
+      How would you describe your investment knowledge?
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-0"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Novice
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-1"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Intermediate
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-2"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Advanced
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`QuestionScreen returns null when no question is found for the given questionId 1`] = `null`;
+
+exports[`QuestionScreen updates the Redux state on answer selection 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f5fbff",
+      "flex": 1,
+      "justifyContent": "center",
+      "opacity": 0,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "alignSelf": "flex-start",
+        "color": "#555",
+        "fontSize": 16,
+        "marginBottom": 12,
+      }
+    }
+  >
+    Question 
+    1
+     of 
+    5
+  </Text>
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 16,
+        "elevation": 6,
+        "padding": 24,
+        "shadowColor": "#000",
+        "shadowOpacity": 0.1,
+        "shadowRadius": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#333",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginBottom": 20,
+        }
+      }
+    >
+      How would you describe your investment knowledge?
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-0"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Novice
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-1"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Intermediate
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#ccc",
+          "borderRadius": 12,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "marginBottom": 12,
+          "opacity": 1,
+          "padding": 14,
+        }
+      }
+      testID="option-2"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderColor": "#999",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 20,
+            },
+            false,
+          ]
+        }
+      />
+      <Text
+        style={
+          {
+            "color": "#333",
+            "fontSize": 16,
+          }
+        }
+      >
+        Advanced
+      </Text>
+    </View>
+  </View>
+</View>
+`;

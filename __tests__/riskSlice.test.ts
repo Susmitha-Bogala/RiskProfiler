@@ -1,4 +1,7 @@
-import riskReducer, { setAnswer, resetAnswers } from '../src/redux/slices/riskSlice';
+import riskReducer, {
+  setAnswer,
+  resetAnswers,
+} from '../src/redux/slices/riskSlice';
 
 // Test suite for riskSlice
 describe('riskSlice', () => {
@@ -27,7 +30,12 @@ describe('riskSlice', () => {
   });
 
   it('should reset answers to an empty array', () => {
-    const initialState = { answers: [{ questionId: 1, score: 5 }, { questionId: 2, score: 8 }] };
+    const initialState = {
+      answers: [
+        { questionId: 1, score: 5 },
+        { questionId: 2, score: 8 },
+      ],
+    };
     const action = resetAnswers();
     const state = riskReducer(initialState, action);
     expect(state.answers).toEqual([]);

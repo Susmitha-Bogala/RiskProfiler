@@ -29,8 +29,8 @@ describe('App', () => {
         <NavigationContainer>
           <App />
         </NavigationContainer>
-      </Provider>
+      </Provider>,
     );
-    expect(toJSON()).not.toBeNull();
+    expect(toJSON()).toMatchSnapshot();
   });
 });

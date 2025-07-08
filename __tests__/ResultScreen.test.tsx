@@ -32,32 +32,37 @@ describe('ResultScreen', () => {
   beforeEach(() => {
     store = mockStore({ risk: { answers: [{ score: 5 }, { score: 10 }] } });
     mockNavigate = jest.fn();
-    jest.spyOn(require('@react-navigation/native'), 'useNavigation').mockReturnValue({
-      navigate: mockNavigate,
-    });
+    jest
+      .spyOn(require('@react-navigation/native'), 'useNavigation')
+      .mockReturnValue({
+        navigate: mockNavigate,
+      });
   });
 
   it('renders correctly with the expected elements', () => {
-    const { getByText } = render(
+    const { getByText, toJSON } = render(
       <Provider store={store}>
         <NavigationContainer>
           <ResultScreen />
         </NavigationContainer>
-      </Provider>
+      </Provider>,
     );
 
     expect(getByText('Risk Assessment Complete')).toBeTruthy();
     expect(getByText(/Risk Type:\s*Medium/)).toBeTruthy(); // Use regex to match the full text
     expect(getByText(riskDescriptions['Medium'])).toBeTruthy();
+
+    // Snapshot test
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('dispatches resetAnswers and navigates to Question1 on retake', () => {
-    const { getByText } = render(
+    const { getByText, toJSON } = render(
       <Provider store={store}>
         <NavigationContainer>
           <ResultScreen />
         </NavigationContainer>
-      </Provider>
+      </Provider>,
     );
 
     fireEvent.press(getByText('Retake Questionnaire'));
@@ -65,5 +70,7 @@ describe('ResultScreen', () => {
     const actions = store.getActions();
     expect(actions).toContainEqual(resetAnswers());
     expect(mockNavigate).toHaveBeenCalledWith('Question1');
+
+    expect(toJSON()).toMatchSnapshot();
   });
-}); 
+});
