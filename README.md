@@ -10,7 +10,6 @@ This is a React Native application that guides users through a series of questio
 - 🎯 **Auto-advance Logic** – Automatically proceeds to the next question after answering.
 - 🧠 **Risk Calculation** – Based on user responses and a scoring model.
 - 📊 **Animated Result Screen** – Displays user's risk category using Lottie animations.
-- 🌙 **Dark & Light Theme Support**
 - 🧪 **Unit Testing with Jest** and code coverage support.
 - 🧱 **Modular Code Structure** – Constants, styles, and color management in separate files.
 
@@ -18,15 +17,15 @@ This is a React Native application that guides users through a series of questio
 
 ## 📦 Dependencies
 
-| Package                  | Description                                |
-|--------------------------|--------------------------------------------|
-| react-native             | Core mobile framework                      |
-| react-navigation         | Screen navigation                         |
-| redux, react-redux       | State management                          |
-| @reduxjs/toolkit         | Simplified Redux setup                    |
-| lottie-react-native      | JSON-based animations                     |
+| Package                                           | Description                  |
+| ------------------------------------------------- | ---------------------------- |
+| react-native                                      | Core mobile framework        |
+| react-navigation                                  | Screen navigation            |
+| redux, react-redux                                | State management             |
+| @reduxjs/toolkit                                  | Simplified Redux setup       |
+| lottie-react-native                               | JSON-based animations        |
 | react-native-gesture-handler, reanimated, screens | Required by navigation stack |
-| jest, @testing-library/react-native | Unit testing                     |
+| jest, @testing-library/react-native               | Unit testing                 |
 
 ---
 
@@ -120,14 +119,14 @@ yarn test --coverage
 The app uses the following rules to compute a total score and risk level:
 
 - **Questions 1 & 2**: Score range 1–3
-  - Example: *Novice = 1, Intermediate = 2, Advanced = 3*
+  - Example: _Novice = 1, Intermediate = 2, Advanced = 3_
 - **Questions 3, 4 & 5**: Score range 1–5
-  - Example: *Very Risk Averse = 1, Risk-Tolerant = 5*
+  - Example: _Very Risk Averse = 1, Risk-Tolerant = 5_
 
 ### 🏷️ Risk Category Mapping
 
 | Score Range | Category |
-|-------------|----------|
+| ----------- | -------- |
 | 5 - 9       | Low      |
 | 10 - 14     | Medium   |
 | 15+         | High     |
@@ -165,12 +164,14 @@ The app uses the following rules to compute a total score and risk level:
 ## 🧰 Troubleshooting
 
 - If you encounter build issues, try:
+
 ```bash
 cd android && ./gradlew clean && cd ..
 npm start --reset-cache
 ```
 
 - For iOS:
+
 ```bash
 cd ios && pod install && cd ..
 ```
