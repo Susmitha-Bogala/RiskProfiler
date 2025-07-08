@@ -1,97 +1,187 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📊 React Native Risk Profiler App
 
-# Getting Started
+This is a React Native application that guides users through a series of questions to assess their investment risk profile. The app calculates a risk score and classifies the user as **Low**, **Medium**, or **High** risk. It supports dark mode, smooth navigation, and animated result screens using Lottie.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🧩 Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- 🔢 **Step-by-step Questionnaire** – Each question appears on a new screen.
+- 🎯 **Auto-advance Logic** – Automatically proceeds to the next question after answering.
+- 🧠 **Risk Calculation** – Based on user responses and a scoring model.
+- 📊 **Animated Result Screen** – Displays user's risk category using Lottie animations.
+- 🌙 **Dark & Light Theme Support**
+- 🧪 **Unit Testing with Jest** and code coverage support.
+- 🧱 **Modular Code Structure** – Constants, styles, and color management in separate files.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
+## 📦 Dependencies
+
+| Package                  | Description                                |
+|--------------------------|--------------------------------------------|
+| react-native             | Core mobile framework                      |
+| react-navigation         | Screen navigation                         |
+| redux, react-redux       | State management                          |
+| @reduxjs/toolkit         | Simplified Redux setup                    |
+| lottie-react-native      | JSON-based animations                     |
+| react-native-gesture-handler, reanimated, screens | Required by navigation stack |
+| jest, @testing-library/react-native | Unit testing                     |
+
+---
+
+## 🛠️ Getting Started
+
+> ✅ Prerequisite: Make sure you have completed the [React Native Environment Setup](https://reactnative.dev/docs/environment-setup) for your OS (Android/iOS).
+
+### 📁 Clone the Project
+
+```bash
+git clone https://github.com/your-username/risk-profiler-app.git
+cd risk-profiler-app
+```
+
+### 📥 Install Dependencies
+
+```bash
 # Using npm
-npm start
+npm install
 
-# OR using Yarn
+# OR using yarn
+yarn install
+```
+
+---
+
+## 📱 Running the App
+
+### 🚀 Start Metro Bundler
+
+```bash
+npm start
+# or
 yarn start
 ```
 
-## Step 2: Build and run your app
+### 🤖 Run on Android
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Make sure you have an Android emulator running or an Android device connected.
 
-### Android
-
-```sh
-# Using npm
+```bash
 npm run android
-
-# OR using Yarn
+# or
 yarn android
 ```
 
-### iOS
+### 🍎 Run on iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+> macOS & Xcode required
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+1. Install CocoaPods dependencies:
 
-```sh
-bundle install
+```bash
+cd ios
+pod install
+cd ..
 ```
 
-Then, and every time you update your native dependencies, run:
+2. Run on iOS simulator:
 
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+```bash
 npm run ios
-
-# OR using Yarn
+# or
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## 🧪 Running Tests
 
-## Step 3: Modify your app
+### 🔬 Run All Unit Tests
 
-Now that you have successfully run the app, let's make changes!
+```bash
+npm test
+# or
+yarn test
+```
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+### 📈 Generate Code Coverage Report
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+```bash
+npm test -- --coverage
+# or
+yarn test --coverage
+```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+## 🎯 Risk Scoring Logic
 
-You've successfully run and modified your React Native App. :partying_face:
+The app uses the following rules to compute a total score and risk level:
 
-### Now what?
+- **Questions 1 & 2**: Score range 1–3
+  - Example: *Novice = 1, Intermediate = 2, Advanced = 3*
+- **Questions 3, 4 & 5**: Score range 1–5
+  - Example: *Very Risk Averse = 1, Risk-Tolerant = 5*
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+### 🏷️ Risk Category Mapping
 
-# Troubleshooting
+| Score Range | Category |
+|-------------|----------|
+| 5 - 9       | Low      |
+| 10 - 14     | Medium   |
+| 15+         | High     |
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+---
 
-# Learn More
+## 📂 Project Structure
 
-To learn more about React Native, take a look at the following resources:
+```
+.
+├── App.tsx
+├── __tests__/
+├── src/
+│   ├── assets/
+│   ├── constants/
+│   ├── redux/
+│   ├── navigation/
+│   ├── screens/
+│   ├── styles/
+│   └── utils/
+├── README.md
+├── package.json
+└── jest.config.js
+```
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+---
+
+## 🎉 Bonus Features
+
+- 📱 Fully responsive layout
+- 🧩 Modular architecture with reusable components
+
+---
+
+## 🧰 Troubleshooting
+
+- If you encounter build issues, try:
+```bash
+cd android && ./gradlew clean && cd ..
+npm start --reset-cache
+```
+
+- For iOS:
+```bash
+cd ios && pod install && cd ..
+```
+
+Visit [React Native Troubleshooting Docs](https://reactnative.dev/docs/troubleshooting) for more help.
+
+---
+
+## 📚 Learn More
+
+- [React Native Docs](https://reactnative.dev/docs/getting-started)
+- [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+- [React Navigation](https://reactnavigation.org/docs/getting-started/)
+- [Lottie Animations](https://airbnb.io/lottie/#/)
